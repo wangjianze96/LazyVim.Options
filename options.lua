@@ -2,16 +2,21 @@ local opt = vim.opt
 
 opt.relativenumber = false
 opt.wrap = true
--- opt.colorcolumn = "100"
---
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.guifont = { "Maple Mono NF CN", ":h16" }
+
 vim.filetype.add({
-  extension = {
-    ckt = "spice",
-    include = "verilogams",
-    inc = "spice",
-    lib = "spice",
-    cir = "spice",
-    nmos = "spice",
-    pmos = "spice",
-  },
+    extension = {
+        src = "spice",
+        cir = "spice",
+        ckt = "spice",
+        lib = "spice",
+        inc = "spice",
+        nmos = "spice",
+        pmos = "spice",
+        mod = "spice",
+        pm = "spice",
+        include = "verilogams",
+    },
 })
